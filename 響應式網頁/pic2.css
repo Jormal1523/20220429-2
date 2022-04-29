@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+
+* {
+  /* margin: 0;  
+    padding: 0;   */
+  text-decoration: none;
+}
+body {
+  background-image: url(img/King-Gnu-1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+.cover {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  text-shadow: 0.1em 0.1em #333;
+}
+.cover div {
+  display: flex;
+  padding-bottom: 0px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: -5px;
+  color: white;
+  align-items: flex-end;
+}
+.hr {
+  width: 800px;
+}
+.buyList{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  right:5px;
+  top:10px;
+  border-radius: 20px;
+  padding-left: 15px;
+  background-color: rgb(244, 230, 230, 0.6);
+}
+.buyList a{
+  color:yellow;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url(img/King-Gnu-1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+  }
+  .cover {
+    margin-top: 5vh;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cover div {
+    display: flex;
+    padding-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: -10px;
+    color: white;
+    align-items: flex-end;
+    text-align: center;
+    text-shadow: 0.1em 0.1em #333;
+  }
+  .buyList{
+    width: 70px;
+    height: 30px;
+    right:3px;
+    top:20px;
+  }
+}
+a {
+  color: white;
+  text-decoration: none;
+  border: 0px;
+}
+a:hover {
+  margin-bottom: 10px;
+}
+.title a:hover {
+  margin-bottom: 0px;
+}
+.title {
+  font-size: 50px;
+  font-family: "Rubik Moonrocks", cursive;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel {
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 700px;
+    max-width: 800px;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding: 0;
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .buttons-container {
+    display: inline-block;
+    width:100%;
+    position: absolute;
+    /* bottom: 10px; */
+    top:50%;
+    transform: translateY(-50%);
+    left:50%;
+    transform: translateX(-50%);
+  }
+  #left{
+    position: absolute;
+    left:10px;
+  }
+  #right{
+    position: absolute;
+    right:10px;
+  }
+  .btn {
+    background-color: rgb(111, 54, 168, 0.6);
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    margin: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    width: 50px;
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 600px){
+    .carousel{
+      height: 500px;
+    }
+  }
